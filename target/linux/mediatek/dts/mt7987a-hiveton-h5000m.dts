@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: (GPL-2.0 OR MIT)
+/ext-devices-prefix// SPDX-License-Identifier: (GPL-2.0 OR MIT)
 /*
  * Hiveton H5000M (MT7987A + MT7992 Wi-Fi 7), eMMC boot.
  * OpenWrt 25.12 (kernel 6.12).
@@ -276,6 +276,7 @@
 		mtketh-max-gmac = <2>;
 		mtketh-ppe-num = <2>;
 		ext-devices-prefix = "usb", "wwan", "rmnet", "eth2", "eth3";
+		ext-devices = "usb0";
 		interrupts = <GIC_SPI 198 IRQ_TYPE_LEVEL_HIGH>;
 		resets = <&ethsys 0>;
 		reset-names = "mtketh";

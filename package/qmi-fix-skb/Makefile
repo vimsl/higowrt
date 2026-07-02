@@ -18,8 +18,9 @@ define KernelPackage/qmi-fix-skb
 endef
 
 define Build/Compile
-	$(KERNEL_MAKE) M=$(PKG_BUILD_DIR) modules
+	$(KERNEL_MAKE) M="$(PKG_BUILD_DIR)" modules
 endef
 
 $(eval $(call KernelPackage,qmi-fix-skb))
+
 
